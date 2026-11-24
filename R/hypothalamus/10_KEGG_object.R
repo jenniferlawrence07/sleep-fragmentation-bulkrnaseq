@@ -22,5 +22,5 @@ gse_KEGG_hypo <- gseKEGG(geneList = kegg_gene_list_hypo,
                      minGSSize= 3,
                      maxGSSize     = 800,
                      pvalueCutoff  = 0.05,
-                     pAdjustMethod = "none",
+                     pAdjustMethod = "BH",
                      keyType  = "ncbi-geneid")

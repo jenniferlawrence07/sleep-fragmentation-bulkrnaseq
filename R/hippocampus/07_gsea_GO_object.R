@@ -20,7 +20,7 @@ gseHippo <- gseGO(
   pvalueCutoff = 0.05,
   verbose = TRUE,
   OrgDb = organism,
-  pAdjustMethod = "none"
+  pAdjustMethod = "BH"
 )
 
 # simplify redundant terms
